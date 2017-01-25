@@ -1,15 +1,16 @@
 {
   "name": "Schoology+",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Adds buttons to events on schoology",
   "manifest_version": 2,
-    "content_scripts": [
+  "content_scripts": [
 	{
 	    "matches": ["https://bca.schoology.com/*"],
 	    "js": ["contentscript.js"]
 	}
-    ],
-    "browser_action": {
+  ],
+  "browser_action": {
 	"default_title": "Adds buttons to events on schoology"
-    }
+  },
+  "web_accessible_resources": ["script.js"]
 }
