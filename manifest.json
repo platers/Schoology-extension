@@ -6,13 +6,13 @@
   "content_scripts": [
 	{
 	    "matches": ["https://bca.schoology.com/*"],
-	    "js": ["contentscript.js"]
-        //"run_at": "document_idle",
+	    "js": ["script.js"],
+        "run_at": "document_end"
         //"all_frames": true
 	}
   ],
   "browser_action": {
 	"default_title": "Adds buttons to events on schoology"
   },
-  "web_accessible_resources": ["script.js"]
+  "permissions": [ "activeTab", "https://ajax.googleapis.com/"]
 }
